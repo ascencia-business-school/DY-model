@@ -1,6 +1,6 @@
 # DY-model
 
-Diagram:
+# Diagram:
 
 ![alt text](image.png)
 
