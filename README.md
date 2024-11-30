@@ -1,9 +1,9 @@
 # DY-model
 
+Diagram:
+
 ![alt text](image.png)
 
-Give pratical example of Bank officer and customer in the Dolev yao model protocal..Note the protocol must not be perfect and see where malfctor authhentication come in to play
-Let's consider a scenario involving a bank officer (Mr. Lee) and a customer (Sarah) in the context of the Dolev-Yao model. We'll design a protocol for Sarah requesting a balance inquiry from Mr. Lee, including potential vulnerabilities and where malicious actor authentication can come into play.
 
 Scenario:
 Customer's Initial Message: Sarah sends a message to Mr. Lee requesting her account balance.
@@ -14,18 +14,8 @@ Customer's Response: Sarah encrypts the nonce with the shared secret key and sen
 
 Bank Officer's Verification: Mr. Lee decrypts the message with the shared secret key and verifies the nonce.
 
-Diagram:
-plaintext
-Sarah (Customer)             Mr. Lee (Bank Officer)              Eve (Attacker)
-      |                                |                                |
-      |--- "Requesting balance" ------>|                                |
-      |                                |                                |
-      |<--- Nonce, Shared Key ---------|                                |
-      |                                |                                |
-      |--- Encrypt(Nonce, Shared Key), Account Details -->|
-      |                                |                                |
-      |<--- Decrypt(Nonce, Shared Key)-|                                |
-      |                                |                                |
+
+
 # Questions:
 
 # 1. What assets are being protected?
